@@ -9,9 +9,9 @@ st.set_page_config(page_title="Tool Phân Khai 2026 (Fix Column Select)", layout
 
 st.title("🎯 Tool Phân Khai - Phiên bản Fix Chọn Cột")
 st.markdown("""
-**Cập nhật V5 khắc phục lỗi:**
-✅ **Sửa lỗi chọn nhầm cột:** Tự động bỏ qua cột *"Xã phường trước sáp nhập"* để lấy đúng cột *"Xã, phường, đặc khu"*.
-✅ **Chuẩn hóa 100%:** Xử lý bất đồng bộ font chữ, khoảng trắng để đảm bảo khớp tên Sheet.
+**Cập nhật:**
+✅ ** Tự động bỏ qua cột *"Xã phường trước sáp nhập"* để lấy đúng cột *"Xã, phường, đặc khu"*.
+✅ ** Xử lý bất đồng bộ font chữ, khoảng trắng để đảm bảo khớp tên Sheet.
 """)
 
 # Upload file
@@ -47,7 +47,7 @@ def is_valid_tt(tt_value):
     return s.isdigit()
 
 if uploaded_file is not None:
-    if st.button("🚀 Chạy xử lý (V5 - Fix Lỗi)"):
+    if st.button("🚀 Chạy xử lý "):
         try:
             wb = openpyxl.load_workbook(uploaded_file, data_only=True)
             
